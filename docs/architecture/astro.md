@@ -17,3 +17,5 @@ Collections leem Markdown/JSON em `content/`, `data/` e `videos/` quando esses a
 ## Domínio
 
 `PUBLIC_SITE_URL` define `site` no build. Sem essa variável, o Astro não assume um host.
+
+O pipeline completo (produto → conteúdo → template → HTML → domínio) está em `rendering-flow.md`.
