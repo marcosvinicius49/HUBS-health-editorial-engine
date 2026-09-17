@@ -22,12 +22,11 @@ O motor publica revistas digitais de saúde. Cada URL indexável deve ser HTML c
 
 ## Unidade indexável
 
-Uma URL publicada corresponde a **um** de:
+Uma URL publicada corresponde a **um** template:
 
-- hub (cluster)
-- artigo
-- edição de revista
-- vídeo editorial
+- `category` (cluster / pilar)
+- `magazine` (edição)
+- `article`, `review`, `ingredient`, `safety`, `offer`, `video` (spokes)
 
 Não indexar produtos como páginas neste estágio. Produto é vertical (`products/`), não URL. Quando houver páginas de produto, elas não podem duplicar o intent de um hub ou artigo.
 
@@ -61,10 +60,14 @@ Tipos em `seo/schema/`, um primário por template:
 
 | Template | Schema primário |
 |---|---|
-| `templates/article/` | `Article` (saúde: incluir autor e data) |
-| `templates/hub/` | `CollectionPage` |
+| `templates/article/` | `Article` (autor e datas) |
+| `templates/review/` | `Review` (+ `Article` se long-form) |
+| `templates/ingredient/` | `Article` (`about` da substância) |
+| `templates/safety/` | `Article` / `MedicalWebPage` |
+| `templates/offer/` | `Offer` (sem PDP) |
+| `templates/category/` | `CollectionPage` |
 | `templates/magazine/` | `CollectionPage` ou `PublicationIssue` |
-| `templates/video/` | `VideoObject` (+ `Article` só se houver corpo editorial equivalente) |
+| `templates/video/` | `VideoObject` |
 
 JSON-LD no HTML gerado. Não depender de schema só no cliente.
 

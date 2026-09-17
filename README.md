@@ -8,7 +8,7 @@ Base técnica: **Astro SSG** (`output: "static"`) para Cloudflare Pages. A árvo
 
 ```text
 src/           runtime do SSG (config de collections e página raiz mínima)
-templates/     layouts editoriais reutilizáveis (revista, artigo, hub, vídeo)
+templates/     contratos de página (magazine, article, review, ingredient, safety, offer, video, category)
 components/    blocos reutilizáveis (ainda sem implementação visual)
 products/      verticais de produto (sem páginas neste estágio)
 languages/     pacotes de idioma, hreflang e cópia de interface
