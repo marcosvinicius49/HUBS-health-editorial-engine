@@ -2,7 +2,7 @@
 import languages from "../../config/languages.json";
 import seo from "../../config/seo.json";
 
-const title = seo.defaultTitle;
+const title = `Not found — ${seo.defaultTitle}`;
 const locale = languages.default;
 ---
 
@@ -12,16 +12,13 @@ const locale = languages.default;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
-    <meta name="description" content="Static origin of the Health Editorial Engine." />
     <title>{title}</title>
   </head>
   <body>
     <main>
-      <h1>{title}</h1>
-      <p>
-        Static Astro origin is live on Cloudflare Pages. Magazine templates are
-        not published yet.
-      </p>
+      <h1>Not found</h1>
+      <p>This URL is not published.</p>
+      <p><a href="/">Back to origin</a></p>
     </main>
   </body>
 </html>
