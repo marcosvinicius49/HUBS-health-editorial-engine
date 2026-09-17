@@ -11,5 +11,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "pages:dev": "astro build && wrangler pages dev ./dist"
+  },
+  "dependencies": {
+    "astro": "^7.3.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.133.0"
   }
 }

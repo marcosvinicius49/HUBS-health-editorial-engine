@@ -12,7 +12,7 @@ O motor publica HTML estático (`output: "static"`). Não usa adapter Cloudflare
 
 A árvore editorial na raiz permanece. `src/` é só o runtime do SSG (`content.config.ts` e páginas futuras).
 
-Collections leem Markdown/JSON em `content/`, `data/` e `videos/` quando esses arquivos existirem. Páginas de produto não são geradas neste estágio.
+Collections leem Markdown/JSON em `content/`, `data/` e `videos/` quando esses arquivos existirem. Pastas vazias geram um aviso de glob no build; isso é esperado até o primeiro arquivo `.md`/`.json`. Páginas de produto não são geradas neste estágio.
 
 ## Domínio
 
