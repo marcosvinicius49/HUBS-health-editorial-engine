@@ -2,11 +2,12 @@
 
 Motor editorial SEO global para revistas digitais multilíngues em múltiplos domínios.
 
-Este repositório contém apenas a **arquitetura inicial de pastas**. Páginas, layouts visuais e código de aplicação ainda não fazem parte deste estágio.
+Base técnica: **Astro SSG** (`output: "static"`) para Cloudflare Pages. A árvore editorial na raiz permanece. Ainda não há páginas de produto nem layout visual.
 
 ## Arquitetura
 
 ```text
+src/           runtime do SSG (config de collections e página raiz mínima)
 templates/     layouts editoriais reutilizáveis (revista, artigo, hub, vídeo)
 components/    blocos reutilizáveis (ainda sem implementação visual)
 products/      verticais de produto (sem páginas neste estágio)
@@ -14,9 +15,9 @@ languages/     pacotes de idioma, hreflang e cópia de interface
 hubs/          clusters temáticos de conteúdo
 videos/        metadados e referências editoriais de vídeo
 assets/        mídia de origem (imagens, fontes, ícones, vídeo)
-content/       fonte editorial (artigos, edições, traduções de corpo)
-data/          dados estruturados (taxonomias, autores, keywords)
-public/        raiz estática servida (robots, sitemaps, well-known)
+content/       fonte editorial Markdown/JSON (artigos, edições, traduções)
+data/          dados estruturados Markdown/JSON (taxonomias, autores, keywords)
+public/        raiz estática copiada para dist (robots, sitemaps, well-known)
 seo/           regras e artefatos SEO (schema, canonical, redirects)
 docs/          documentação do motor e do fluxo editorial
 config/        domínios, idiomas, defaults SEO e regras globais
@@ -30,3 +31,12 @@ config/        domínios, idiomas, defaults SEO e regras globais
 - SEO operacional vive em `seo/`; defaults globais ficam em `config/`.
 - Arquivos prontos para o host vão em `public/`; mídia de origem fica em `assets/`.
 - Novas revistas entram como produto, sem duplicar o motor.
+
+## Comandos
+
+```bash
+npm install
+npm run build
+```
+
+Cloudflare Pages: build `npm run build`, output `dist`, Node 22. Detalhes em `docs/architecture/astro.md`.
