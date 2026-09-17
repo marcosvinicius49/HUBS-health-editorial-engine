@@ -1,11 +1,16 @@
 # components
 
-Blocos reutilizáveis montados pelos templates.
+Biblioteca de blocos reutilizáveis montados pelos templates. **Neste estágio não há implementação visual, páginas nem produtos.**
 
-**Neste estágio não há componentes visuais.**
+| Grupo | Função |
+|---|---|
+| `layout/` | Casca da página (chrome, grid, regiões) |
+| `navigation/` | Orientação e despacho (nav, breadcrumb, menus) |
+| `editorial/` | Corpo jornalístico (byline, cards, related, sumário) |
+| `seo/` | Metadados e sinais no HTML (schema, hreflang, head) |
+| `product/` | Identidade de entidade citada (não é PDP) |
+| `video/` | Player, poster, transcrição |
+| `conversion/` | CTA e oferta editorial |
+| `trust/` | Autoria, YMYL, disclosure, evidência |
 
-Subpastas previstas:
-
-- `layout/` — header, footer, navegação, grid
-- `editorial/` — cards, autor, sumário, related content
-- `seo/` — schema, hreflang, metadados visíveis
+Um componente não gera URL. Quem gera URL é o template (`templates/`).

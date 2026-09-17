@@ -6,7 +6,7 @@ Camadas do motor e o que cada uma guarda. Sem páginas de produto e sem componen
 |---|---|---|
 | `src/` | Runtime Astro SSG e collections | Layout visual, páginas de produto |
 | `templates/` | Contratos: magazine, article, review, ingredient, safety, offer, video, category | Páginas, produtos, HTML visual |
-| `components/` | Blocos reutilizáveis (ainda vazios) | UI implementada |
+| `components/` | Grupos: layout, navigation, editorial, seo, product, video, conversion, trust | UI implementada, páginas, PDPs |
 | `products/` | Verticais / marcas futuras | Páginas de produto |
 | `languages/` | Cópia de interface e hreflang | Corpo editorial |
 | `hubs/` | Clusters temáticos | Artigos completos |
