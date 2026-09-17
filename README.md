@@ -37,6 +37,7 @@ config/        domínios, idiomas, defaults SEO e regras globais
 ```bash
 npm install
 npm run build
+npm run pages:dev
 ```
 
-Cloudflare Pages: build `npm run build`, output `dist`, Node 22. Detalhes em `docs/architecture/astro.md`.
+Cloudflare Pages: build `npm run build`, output `dist`, Node 22. Detalhes em `docs/architecture/cloudflare-pages.md`.
