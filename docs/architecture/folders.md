@@ -1,9 +1,10 @@
 # Mapa de pastas
 
-Camadas do motor e o que cada uma guarda. Sem páginas e sem componentes visuais neste estágio.
+Camadas do motor e o que cada uma guarda. Sem páginas de produto e sem componentes visuais neste estágio.
 
 | Pasta | Guarda | Não guarda |
 |---|---|---|
+| `src/` | Runtime Astro SSG e collections | Layout visual, páginas de produto |
 | `templates/` | Contratos de layout (revista, artigo, hub, vídeo) | Páginas publicadas |
 | `components/` | Blocos reutilizáveis (ainda vazios) | UI implementada |
 | `products/` | Verticais / marcas futuras | Páginas de produto |
