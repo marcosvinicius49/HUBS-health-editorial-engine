@@ -4,8 +4,8 @@ O grafo editorial é um conjunto de hubs (pilares) e spokes (peças). O motor n�
 
 ## Definições
 
-- **Hub:** cluster temático em `hubs/`, com taxonomia em `data/taxonomies/` e intent de pilar em `data/keywords/`. Template: `templates/hub/`.
-- **Spoke:** artigo (`content/articles/`), vídeo (`videos/`) ou peça de edição que aprofunda **um** recorte do hub. Templates: `templates/article/`, `templates/video/`.
+- **Hub:** cluster temático em `hubs/`, com taxonomia em `data/taxonomies/` e intent de pilar em `data/keywords/`. Template de página: `templates/category/`.
+- **Spoke:** peça que aprofunda **um** recorte do hub. Templates: `article`, `review`, `ingredient`, `safety`, `offer`, `video`.
 - **Revista:** `content/magazines/` agrupa spokes de uma edição; não substitui o hub. Uma edição pode atravessar vários hubs, mas cada spoke continua com um hub primário.
 
 ## Cardinalidade

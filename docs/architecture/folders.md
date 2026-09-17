@@ -5,7 +5,7 @@ Camadas do motor e o que cada uma guarda. Sem páginas de produto e sem componen
 | Pasta | Guarda | Não guarda |
 |---|---|---|
 | `src/` | Runtime Astro SSG e collections | Layout visual, páginas de produto |
-| `templates/` | Contratos de layout (revista, artigo, hub, vídeo) | Páginas publicadas |
+| `templates/` | Contratos: magazine, article, review, ingredient, safety, offer, video, category | Páginas, produtos, HTML visual |
 | `components/` | Blocos reutilizáveis (ainda vazios) | UI implementada |
 | `products/` | Verticais / marcas futuras | Páginas de produto |
 | `languages/` | Cópia de interface e hreflang | Corpo editorial |
