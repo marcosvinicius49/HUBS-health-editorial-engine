@@ -1,6 +1,6 @@
 # assets
 
-Mídia estática compartilhada entre produtos, idiomas e domínios.
+Mídia de origem compartilhada entre produtos, idiomas e domínios. Arquivos já publicados no host ficam em `public/`.
 
 - `images/` — capas, thumbnails, infográficos
 - `fonts/` — tipografia das revistas

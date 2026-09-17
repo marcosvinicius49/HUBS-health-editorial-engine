@@ -2,6 +2,8 @@
 
 Blocos reutilizáveis montados pelos templates.
 
+**Neste estágio não há componentes visuais.**
+
 Subpastas previstas:
 
 - `layout/` — header, footer, navegação, grid
